@@ -150,3 +150,30 @@ button {
     color: #ff5722;
     margin-bottom: 10px;
 }
+#flower-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    pointer-events: none;
+    overflow: visible;
+}
+
+.flower {
+    position: absolute;
+    top: -20px;
+    font-size: 20px;
+    animation: fall 2s linear forwards;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
