@@ -19,7 +19,10 @@ console.log(questions.length);
 let currentQ = 0;
 let score = 0;
 let answered = false;
+let timeLeft = 5;
+let timer;
 
+const timerEl = document.getElementById("timer");
 const questionEl = document.getElementById("question");
 const optionsEl = document.getElementById("options");
 const scoreDisplay = document.getElementById("scoreDisplay");
@@ -43,6 +46,21 @@ function startMusic() {
 document.addEventListener("click", startMusic, { once: true });
 document.addEventListener("touchstart", startMusic, { once: true });
 
+function startTimer() {
+    timeLeft = 5;
+    timerEl.innerText = "Time: " + timeLeft;
+
+    timer = setInterval(() => {
+        timeLeft--;
+        timerEl.innerText = "Time: " + timeLeft;
+
+        if (timeLeft <= 0) {
+            clearInterval(timer);
+            autoNext();
+        }
+    }, 1000);
+}
+
 function loadQuestion() {
     answered = false;
 
@@ -59,9 +77,11 @@ function loadQuestion() {
         div.onclick = () => selectAnswer(div, index);
         optionsEl.appendChild(div);
     });
+    startTimer();
 }
 
 function selectAnswer(selected, index) {
+    clearInterval(timer);
     if (answered) return;
     answered = true;
 
@@ -120,6 +140,15 @@ function showResult() {
     document.querySelector(".cta-box").scrollIntoView({ behavior: "smooth" });
 }
 
+function autoNext() {
+    currentQ++;
+
+    if (currentQ < questions.length) {
+        loadquestion();
+    } else {
+        showResult();
+    }
+}
 
 
 function redirect() {
