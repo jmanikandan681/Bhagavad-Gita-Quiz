@@ -122,6 +122,9 @@ function redirect() {
 
 document.getElementById("startBtn").onclick = () => {
     startMusic();
-    loadQuestion();
+
     document.getElementById("startBtn").style.display = "none";
-};
+    document.getElementById("question-box").classList.remove("hidden");
+
+    loadQuestion();
+};    ;
