@@ -93,7 +93,7 @@ document.addEventListener("touchstart", startMusic, { once: true });
 
 function startTimer() {
     console.log("Timer started");
-    timeLeft = 5;
+    timeLeft = 10;
     timerEl.innerText = "Time: " + timeLeft;
 
     clearInterval(timer); // 🔥 important safety
