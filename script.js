@@ -142,7 +142,8 @@ function selectAnswer(selected, index) {
     });
 
     if (index === correctIndex) {
-        correctSound.play();
+       correctSound.currentTime = 0;
+        correctSound.play().catch(() => {});
         showFlowers(); // 🌸 animation
         score++;
         scoreDisplay.innerText = `Score: ${score}/${questions.length}`;
