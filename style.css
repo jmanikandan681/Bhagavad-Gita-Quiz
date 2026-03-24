@@ -31,14 +31,22 @@ h1 {
 
 .option {
     padding: 18px;
-    border-radius: 12px;
-    background: #e0e0e0;
+    border-radius: 14px;
+    background: #f0f8ff; /* light blue */
+    border: 2px solid #cce0ff;
     font-size: 16px;
     cursor: pointer;
+    text-align: center;
+    font-weight: 500;
+    transition: 0.2s;
 }
 
 .option:hover {
-    background: #d0d0d0;
+    background: #d6ebff;
+}
+
+.option:active {
+    transform: scale(0.98);
 }
 
 button {
@@ -49,13 +57,15 @@ button {
 }
 
 .correct {
-    background: green;
+    background: #4CAF50 !important;
     color: white;
+    border: none;
 }
 
 .wrong {
-    background: red;
+    background: #f44336 !important;
     color: white;
+    border: none;
 }
 
 .hidden {
@@ -107,4 +117,10 @@ button {
     background: #e64a19;
     transform: scale(1.05);
     transition: 0.2s;
+}
+@media(max-width: 480px) {
+    .option {
+        font-size: 17px;
+        padding: 20px;
+    }
 }
