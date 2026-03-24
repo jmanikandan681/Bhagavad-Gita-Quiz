@@ -17,8 +17,8 @@ const questions = [
     {
         question: "3. What does Krishna teach Arjuna to do?",
         options: [
-                "What does Krishna teach Arjuna to do?"
-                  "Perform his duty"
+                "Leave the Battlefield",
+                  "Perform his duty",
                     "Become a king",
                         "Meditate only"
     ],
@@ -36,7 +36,7 @@ const questions = [
     },
     {
         question: "6. What is yoga in the Bhagavad Gita?",
-        options: ["Only physical exercise","Union with the God","Be Peaceful","Eating Properly"],
+        options: ["Only physical exercise","Union with God","Be Peaceful","Eating Properly"],
         answer:1
     },
     {
@@ -46,11 +46,11 @@ const questions = [
     },
     {
         question: "8. What does Krishna say about the soul?",
-        options:["It is born and dies","It never exist", "It is weak", "It is eternal"],
+        options:["It is born and dies","It never exists", "It is weak", "It is eternal"],
         answer:3
     },
     {
-        question: "9. What is one should control according to the Gita?",
+        question: "9. What should one control according to the Gita?",
         options: ["Nature","Other people","Mind and Senses","Wealth"],
         answer: 2
     },
