@@ -12,7 +12,7 @@ const questions = [
     {
         question: "Who is the speaker of Bhagavad Gita?",
         options: ["Arjuna", "Krishna", "Vyasa", "Brahma"],
-        answer: 1
+        answer: 2
     }
 ];
 
