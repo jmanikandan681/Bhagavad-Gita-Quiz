@@ -120,4 +120,8 @@ function redirect() {
     window.location.href = "https://your-link.com";
 }
 
-loadQuestion();
+document.getElementById("startBtn").onclick = () => {
+    startMusic();
+    loadQuestion();
+    document.getElementById("startBtn").style.display = "none";
+};
