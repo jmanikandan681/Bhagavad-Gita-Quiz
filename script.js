@@ -15,7 +15,7 @@ const questions = [
         answer: 2
     }
 ];
-
+console.log(questions.length); 
 let currentQ = 0;
 let score = 0;
 let answered = false;
