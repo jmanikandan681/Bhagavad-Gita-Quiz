@@ -68,3 +68,43 @@ button {
         grid-template-columns: 1fr 1fr;
     }
 }
+.cta-box {
+    margin-top: 30px;
+    padding: 25px;
+    background: linear-gradient(135deg, #fff7cc, #ffe066);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.cta-heading {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.cta-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cta-subtext {
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background: #ff5722;
+    color: white;
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    background: #e64a19;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
