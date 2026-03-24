@@ -64,7 +64,7 @@ console.log(questions.length);
 let currentQ = 0;
 let score = 0;
 let answered = false;
-let timeLeft = 5;
+let timeLeft = 10;
 let timer;
 
 const timerEl = document.getElementById("timer");
