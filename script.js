@@ -28,11 +28,17 @@ const correctSound = document.getElementById("correctSound");
 const wrongSound = document.getElementById("wrongSound");
 const bgMusic = document.getElementById("bgMusic");
 
-// Start background music (user interaction required in some browsers)
-document.body.addEventListener("click", () => {
+function startMusic() {
     bgMusic.volume = 0.3;
-    bgMusic.play();
-}, { once: true });
+
+    const playPromise = bgMusic.play();
+
+    if (playPromise !== undefined) {
+        playPromise.catch(() => {
+            console.log("Autoplay blocked");
+        });
+    }
+}
 
 function loadQuestion() {
     answered = false;
