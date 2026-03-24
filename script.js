@@ -1,6 +1,6 @@
 const questions = [
     {
-        question: "What is a central recommended means to moksha in the Gita?",
+        question: "1. What is a central recommended means to moksha in the Gita?",
         options: [
             "Exclusive study of Vedas",
             "Devotion to God (Bhakti)",
@@ -10,9 +10,54 @@ const questions = [
         answer: 1
     },
     {
-        question: "Who is the speaker of Bhagavad Gita?",
-        options: ["Arjuna", "Krishna", "Vyasa", "Brahma"],
-        answer: 1
+        question: "2. Who is the speaker of Bhagavad Gita?",
+        options: ["Arjuna", "Vyasa", "Krishna", "Brahma"],
+        answer: 2
+    },
+    {
+        question: "3. What does Krishna teach Arjuna to do?",
+        options: [
+                "What does Krishna teach Arjuna to do?"
+                  "Perform his duty"
+                    "Become a king",
+                        "Meditate only"
+    ],
+                answer: 1
+    },
+    {
+        question: "4. What is karma in the Bhagavad Gita?",
+          options:  ["Fate Only", "Knowledge","Worship","Action"],
+            answer: 3
+    },
+    {
+        question: "5. What happens to the soul after death?",
+        options: ["It is destroyed","It disappear","It changes bodies","It sleeps forever"],
+        answer: 2
+    },
+    {
+        question: "6. What is yoga in the Bhagavad Gita?",
+        options: ["Only physical exercise","Union with the God","Be Peaceful","Eating Properly"],
+        answer:1
+    },
+    {
+        question: "7. What is Arjuna confused about at the beginning?",
+        options: ["His duty","His kingdom","His wealth","His teacher"],
+        answer:0
+    },
+    {
+        question: "8. What does Krishna say about the soul?",
+        options:["It is born and dies","It never exist", "It is weak", "It is eternal"],
+        answer:3
+    },
+    {
+        question: "9. What is one should control according to the Gita?",
+        options: ["Nature","Other people","Mind and Senses","Wealth"],
+        answer: 2
+    },
+    {
+        question: "10. What is detachment (vairāgya)?",
+        options: ["Not doing any work","Leaving family","Not being attached to result","Being careless"],
+        answer: 2
     }
 ];
 console.log(questions.length); 
