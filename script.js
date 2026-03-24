@@ -47,11 +47,15 @@ document.addEventListener("click", startMusic, { once: true });
 document.addEventListener("touchstart", startMusic, { once: true });
 
 function startTimer() {
+    console.log("Timer started");
     timeLeft = 5;
     timerEl.innerText = "Time: " + timeLeft;
 
+    clearInterval(timer); // 🔥 important safety
+
     timer = setInterval(() => {
         timeLeft--;
+        console.log("Tick", timeLeft);
         timerEl.innerText = "Time: " + timeLeft;
 
         if (timeLeft <= 0) {
