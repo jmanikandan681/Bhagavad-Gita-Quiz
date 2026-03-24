@@ -148,7 +148,8 @@ function selectAnswer(selected, index) {
         scoreDisplay.innerText = `Score: ${score}/${questions.length}`;
     } else {
         selected.classList.add("wrong");
-        wrongSound.play();
+        wrongSound.currentTime = 0; // reset
+        wrongSound.play().catch(() => {});
     }
 }
 
