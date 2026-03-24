@@ -124,3 +124,15 @@ button {
         padding: 20px;
     }
 }
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4CAF50;
+    color: white;
+    padding: 15px;
+}
+
+#scoreDisplay {
+    font-weight: bold;
+}
