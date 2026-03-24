@@ -117,7 +117,7 @@ function showResult() {
 }
 
 function redirect() {
-    window.location.href = "https://your-link.com";
+    window.location.href = "https://forms.gle/ah2UQ7xVDzCAo3CU9";
 }
 
 document.getElementById("startBtn").onclick = () => {
