@@ -114,10 +114,11 @@ function showResult() {
         window.location.href = "https://your-link.com";
     }, 5000);
     */
+    document.querySelector(".cta-box").scrollIntoView({ behavior: "smooth" });
 }
 
 function redirect() {
-    window.location.href = "https://forms.gle/ah2UQ7xVDzCAo3CU9";
+    window.open("https://forms.gle/VUWrNBBZWtuPRqj69", "_blank");
 }
 
 document.getElementById("startBtn").onclick = () => {
