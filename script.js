@@ -39,6 +39,8 @@ function startMusic() {
         });
     }
 }
+document.addEventListener("click", startMusic, { once: true });
+document.addEventListener("touchstart", startMusic, { once: true });
 
 function loadQuestion() {
     answered = false;
