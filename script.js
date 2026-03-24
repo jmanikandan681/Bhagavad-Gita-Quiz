@@ -145,15 +145,23 @@ function showResult() {
 }
 
 function autoNext() {
-    answered = true; // ✅ IMPORTANT FIX
+    if (answered) return; // ✅ prevent double run
 
-    currentQ++;
+    answered = true;
 
-    if (currentQ < questions.length) {
-        loadQuestion();
-    } else {
-        showResult();
-    }
+    // disable Next button temporarily
+    nextBtn.disabled = true;
+
+    setTimeout(() => {
+        currentQ++;
+
+        if (currentQ < questions.length) {
+            nextBtn.disabled = false; // enable again
+            loadQuestion();
+        } else {
+            showResult();
+        }
+    }, 500);
 }
 
 function redirect() {
