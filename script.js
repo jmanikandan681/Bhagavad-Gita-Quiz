@@ -22,6 +22,7 @@ let answered = false;
 
 const questionEl = document.getElementById("question");
 const optionsEl = document.getElementById("options");
+const scoreDisplay = document.getElementById("scoreDisplay");
 const nextBtn = document.getElementById("nextBtn");
 
 const correctSound = document.getElementById("correctSound");
@@ -47,6 +48,7 @@ function loadQuestion() {
 
     const q = questions[currentQ];
     questionEl.innerText = `Q${currentQ + 1}. ${q.question}`;
+    scoreDisplay.innerText = `Score: ${score}/${questions.length}`;
     optionsEl.innerHTML = "";
 
     q.options.forEach((opt, index) => {
@@ -73,6 +75,7 @@ function selectAnswer(selected, index) {
     if (index === correctIndex) {
         correctSound.play();
         score++;
+        scoreDisplay.innerText = `Score: ${score}/${questions.length}`;
     } else {
         selected.classList.add("wrong");
         wrongSound.play();
