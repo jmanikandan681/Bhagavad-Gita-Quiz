@@ -136,3 +136,9 @@ button {
 #scoreDisplay {
     font-weight: bold;
 }
+#timer {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff5722;
+    margin-bottom: 10px;
+}
