@@ -117,8 +117,13 @@ function showResult() {
     document.querySelector(".cta-box").scrollIntoView({ behavior: "smooth" });
 }
 
+
+
 function redirect() {
-    window.open("https://forms.gle/VUWrNBBZWtuPRqj69", "_blank");
+    bgMusic.pause();
+    bgMusic.currentTime = 0;
+
+    window.location.href = "https://forms.gle/VUWrNBBZWtuPRqj69";
 }
 
 document.getElementById("startBtn").onclick = () => {
