@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhagavad Gita Quiz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="quiz-container">
+
+    <h1>Bhagavad Gita Mind Quiz</h1>
+
+    <!-- Question Box -->
+    <div id="question-box">
+        <h2 id="question"></h2>
+        <div id="options"></div>
+        <button id="nextBtn">Next</button>
+    </div>
+
+    <!-- Result Box -->
+    <div id="result-box" class="hidden">
+        <h2>Quiz Completed</h2>
+        <p>Your Score: <strong id="score"></strong></p>
+        <p id="message"></p>
+        <button onclick="redirect()">Continue</button>
+    </div>
+
+</div>
+
+<!-- Audio -->
+<audio id="bgMusic" loop src="assets/bg-music.mp3"></audio>
+<audio id="correctSound" src="assets/correct.mp3"></audio>
+<audio id="wrongSound" src="assets/wrong.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
