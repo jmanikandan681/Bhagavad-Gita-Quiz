@@ -67,7 +67,7 @@ function startTimer() {
 
 function loadQuestion() {
     answered = false;
-
+nextBtn.disabled = false;
     const q = questions[currentQ];
     questionEl.innerText = `Q${currentQ + 1}. ${q.question}`;
     scoreDisplay.innerText = `Score: ${score}/${questions.length}`;
@@ -111,6 +111,8 @@ nextBtn.onclick = () => {
         alert("Please select an answer first");
         return;
     }
+
+    clearInterval(timer);
 
     currentQ++;
 
