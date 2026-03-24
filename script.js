@@ -145,15 +145,16 @@ function showResult() {
 }
 
 function autoNext() {
+    answered = true; // ✅ IMPORTANT FIX
+
     currentQ++;
 
     if (currentQ < questions.length) {
-        loadquestion();
+        loadQuestion();
     } else {
         showResult();
     }
 }
-
 
 function redirect() {
     bgMusic.pause();
